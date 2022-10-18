@@ -1,0 +1,68 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<body style="background-color:#1C1C20;font-family:sans-serif">
+    <div style="display:flex;flex-direction:column; align-items:center; font-size:28px; height:130px;">
+    <div style="color:white; width:100%; height:50px; display:flex;flex-direction:column; align-items:center; font-size:28px;">
+        Quron Xofizlari
+    </div>
+
+    <div style="display:flex;background:white; width:450px;border-radius:15px;">
+        <div style="margin-left:10px;">
+            <svg width="24" height="22" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="m23.5 21.466-7.01-7.01a9.066 9.066 0 0 0 1.736-5.343C18.226 4.088 14.138 0 9.113 0 4.088 0 0 4.088 0 9.113c0 5.025 4.088 9.113 9.113 9.113a9.066 9.066 0 0 0 5.343-1.735l7.01 7.009 2.034-2.034ZM9.113 15.348a6.236 6.236 0 1 1 6.235-6.235 6.243 6.243 0 0 1-6.235 6.235Z"></path></svg>
+        </div>
+        <div>
+            <input class="input" type="search" placeholder=" Qorini ismini kiriting" 
+                style="height:35px;width:400px;font-size:20px;border:0; margin:3px;outline:none;"/>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="QorilarListi" style="display:flex;flex-direction:row; justify-content:space-evenly;">
+        <a asp-controller="Reciters" asp-action="Index" asp-route-NameOfReciter="Mishary">
+        <div style="height:230px;">
+            <img src="https://static.qurancdn.com/images/reciters/6/mishary-rashid-alafasy-profile.jpeg?v=1" 
+            style="width:250px;border-top-left-radius:12px; border-top-right-radius:12px; height:170px;"/>
+                <div style="width:251px; background:#2A2A2A;border-bottom-left-radius:5px;border-bottom-right-radius:5px">
+                    <div style="color:white;margin-left:5px;">
+                        Mishari Rashid al-'Afasy   
+                    </div>
+                </div>
+        </div>
+        </a>
+        <div style="height:230px;">
+            <img src="https://static.qurancdn.com/images/reciters/1/abdelbasset-profile.jpeg?v=1" 
+            style="width:250px;border-top-left-radius:12px; border-top-right-radius:12px; height:170px;"/>
+           
+                <div style="width:251px; background:#2A2A2A;border-bottom-left-radius:5px;border-bottom-right-radius:5px">
+                    <div style="color:white;margin-left:10px;">
+                        Abdulbasit Abdussomad   
+                    </div>
+                </div>
+        </div>
+
+        <div style="height:230px;">
+            <img src="http://quran.com.kw/en/wp-content/uploads/al-minshawy-1.jpg" 
+            style="width:250px;border-top-left-radius:12px; border-top-right-radius:12px; height:170px;"/>
+                <div style="width:251px; background:#2A2A2A;border-bottom-left-radius:5px;border-bottom-right-radius:5px">
+                    <div style="color:white;margin-left:10px;">
+                        Muhammad Siddiq Al-Minshawi  
+                    </div>
+                </div>
+        </div>
+
+        <div style="height:230px;">
+            <img src="https://i1.sndcdn.com/artworks-oZIi5LWhTYBnKg82-0rtrUQ-t500x500.jpg" 
+            style="width:250px;border-top-left-radius:12px; border-top-right-radius:12px; height:170px;"/>
+                <div style="width:251px; background:#2A2A2A;border-bottom-left-radius:5px;border-bottom-right-radius:5px">
+                    <div style="color:white;margin-left:10px;">
+                        Al-Hussary  
+                    </div>
+                </div>
+        </div>
+
+    </div>
+    
+</body>
